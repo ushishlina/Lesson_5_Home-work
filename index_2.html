@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--todo: Подключение шрифтоы до CSS файла, и только одним из сспособов или в CSS или в html/ Этот вариант через Google -->
+        <!-- 
+			<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+		  -->
+
+        <!-- todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap" rel="stylesheet" /> -->
+
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Lesson 5</title>
+    </head>
+	 
+    <body>
+        <div class="wrapper">
+            <!-- Изменить класс боди, изменить файл css -->
+            <header></header>
+
+            <main class="main-article">
+                <nav class="nav-menu">
+                    <a class="link" href="#section">Как работает VPN?</a>
+                    <a class="link" href="#section_2">Без VPN</a>
+                    <a class="link" href="#section_3">С VPN</a>
+                    <a class="link" href="#section_4">Проксирование</a>
+                    <a class="link" href="#section_5">Аутентификация</a>
+                    <a class="link" href="#section_6">Туннелирование</a>
+                    <a class="link" href="#section_7">Шифрование</a>
+                    <a class="link" href="#section_8">VPN-протоколы</a>
+                </nav>
+
+                <div class="contener">
+                    <div class="block-repit width">
+                        <h2 id="section" class="big-title">Как работает VPN?</h2>
+                        <p class="text">
+                            Чтобы понять, как работает сеть VPN, нужно сначала понять, как работает интернет-соединение без нее.
+                        </p>
+                    </div>
+
+                    <div class="block-repit min-width">
+                        <h2 id="section_2" class="title">Без VPN</h2>
+                        <p class="text">
+                            Когда вы заходите на сайт без VPN, вы подключаетесь к этому сайту через вашего интернет-провайдера. Провайдер
+                            присваивает вам <span class="bold">уникальный IP-адрес</span>, который используется для вашей идентификации на
+                            сайте. Поскольку ваш провайдер обрабатывает и перенаправляет весь ваш трафик, он может видеть, какие сайты вы
+                            посещаете. Использование уникального IP-адреса позволяет легко идентифицировать все ваши действия онлайн.
+                        </p>
+                    </div>
+
+                    <div class="block-repit max-width">
+                        <h2 id="section_3" class="title">С VPN</h2>
+                        <p class="text">
+                            Когда вы подключаетесь к Интернету через VPN-приложение на вашем устройстве (его еще называют
+                            <span class="bold">VPN-клиентом</span>), то между вашим устройством и
+                            <span class="bold">VPN-сервером</span> устанавливается безопасное соединение. Ваш трафик всё еще проходит через
+                            вашего провайдера, но он больше не может его прочитать или увидеть конечный пункт назначения. Веб-сайты, которые
+                            вы посещаете, больше не видят ваш исходный IP-адрес, а видят только IP-адрес VPN-сервера, который совместно
+                            используется многими другими пользователями и регулярно меняется.
+                        </p>
+                        <p class="text">
+                            Вот несколько связанных с VPN ключевых понятий, которые помогут вам понять, как работает VPN и какие
+                            преимущества дает этот сервис:
+                        </p>
+                    </div>
+
+                    <div class="block-repit height">
+                        <h2 id="section_4" class="title">Проксирование</h2>
+                        <p class="text">
+                            VPN-сервер действует как <span class="bold">прокси-сервер</span>, или посредник, для всего, что вы делаете
+                            онлайн: вместо вашего реального IP-адреса и местоположения сайты, которые вы посещаете, видят только IP-адрес и
+                            местоположение VPN-сервера.
+                        </p>
+                        <p class="text">Это повышает вашу <span class="bold">анонимность</span> в Интернете.</p>
+                    </div>
+
+                    <div class="block-repit max-height">
+                        <h2 id="section_5" class="title">Аутентификация</h2>
+                        <p class="text">
+                            Создание защищенного соединения — сложная задача, решаемая с помощью продвинутых математических методов,
+                            реализуемых в процессе аутентификации.
+                        </p>
+                        <p class="text">
+                            После аутентификации VPN-клиент и VPN-сервер твердо знают, что они общаются только друг с другом и больше ни с
+                            кем.
+                        </p>
+                    </div>
+
+                    <div class="block-repit padding">
+                        <div class="border">
+                            <h2 id="section_6" class="title">Туннелирование</h2>
+                            <p class="text">
+                                Сети VPN также защищают соединение между клиентом и сервером с помощью туннелирования и шифрования.
+                            </p>
+                            <p class="text">
+                                Туннелирование — это процесс, при котором каждый пакет данных <span class="bold">помещается</span> в другой
+                                пакет данных. Это затрудняет третьим лицам доступ к трафику во время его перемещения.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="block-repit min-height">
+                        <h2 id="section_7" class="title">Шифрование</h2>
+                        <p class="text">
+                            Данные внутри туннеля шифруются таким образом, что только предполагаемый получатель может их расшифровать. Это
+                            позволяет полностью скрыть содержимое вашего интернет-трафика даже от вашего интернет-провайдера.
+                        </p>
+                        <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/vpn-encryption"
+                            >Узнайте подробнее о VPN-шифровании.</a
+                        >
+                    </div>
+
+                    <div class="block-repit width-width">
+                        <h2 id="section_8" class="title">VPN-протоколы</h2>
+                        <p class="text width-width-60">
+                            VPN-протоколы — это <span class="bold">методы</span>, с помощью которых ваше устройство подключается к
+                            VPN-серверу. Некоторые протоколы обеспечивают высокую <span class="bold">скорость</span>, некоторые повышают
+                            <span class="bold">безопасность</span>, а некоторые просто лучше работают при определенных сетевых условиях.
+                        </p>
+                        <img class="picture" src="img/what-is-vpn-protocol.png" alt="VPN-протоколы" />
+								<img class="picture-2" src="img/what-is-vpn-protocol.png" alt="VPN-протоколы" />
+                        <p class="text">
+                            Большинство VPN-сетей используют стандартный набор протоколов, но компания ExpressVPN разработала протокол
+                            Lightway, который превосходит их все по скорости, надежности и безопасности. Попробуйте и убедитесь сами.
+                            Узнайте больше о Lightway.
+                        </p>
+                        <p class="text">
+                            ExpressVPN автоматически выбирает лучший протокол для вашей сети, но вы также можете выбрать его вручную.
+                        </p>
+                        <h2 class="text">В настоящее время популярны следующие VPN-протоколы:</h2>
+                        <ul class="list">
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/openvpn"
+                                    >OpenVPN</a
+                                >
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/ikev2">IKEv2</a>
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/l2tp"
+                                    >L2TP / IPsec</a
+                                >
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/pptp">PPTP *</a>
+                            </li>
+                            <li class="item"><a class="link" target="_blank" href="https://www.expressvpn.com/blog/">WireGuard*</a></li>
+                            <li class="item"><a class="link" href="#">SSTP*</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <div class="block-repit hidden">
+                        <h2 id="section_8" class="title">VPN-протоколы</h2>
+                        <p class="text">
+                            VPN-протоколы — это <span class="bold">методы</span>, с помощью которых ваше устройство подключается к
+                            VPN-серверу. Некоторые протоколы обеспечивают высокую <span class="bold">скорость</span>, некоторые повышают
+                            <span class="bold">безопасность</span>, а некоторые просто лучше работают при определенных сетевых условиях.
+                        </p>
+                        <p class="text">
+                            Большинство VPN-сетей используют стандартный набор протоколов, но компания ExpressVPN разработала протокол
+                            Lightway, который превосходит их все по скорости, надежности и безопасности. Попробуйте и убедитесь сами.
+                            Узнайте больше о Lightway.
+                        </p>
+                        <p class="text">
+                            ExpressVPN автоматически выбирает лучший протокол для вашей сети, но вы также можете выбрать его вручную.
+                        </p>
+                        <h2 class="text">В настоящее время популярны следующие VPN-протоколы:</h2>
+                        <ul class="list">
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/openvpn"
+                                    >OpenVPN</a
+                                >
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/ikev2">IKEv2</a>
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/l2tp"
+                                    >L2TP / IPsec</a
+                                >
+                            </li>
+                            <li class="item">
+                                <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/pptp">PPTP *</a>
+                            </li>
+                            <li class="item"><a class="link" target="_blank" href="https://www.expressvpn.com/blog/">WireGuard*</a></li>
+                            <li class="item"><a class="link" href="#">SSTP*</a></li>
+                        </ul>
+                    </div>
+
+						  <div class="block-repit scroll">
+							<h2 id="section_8" class="title">VPN-протоколы</h2>
+							<p class="text">
+								 VPN-протоколы — это <span class="bold">методы</span>, с помощью которых ваше устройство подключается к
+								 VPN-серверу. Некоторые протоколы обеспечивают высокую <span class="bold">скорость</span>, некоторые повышают
+								 <span class="bold">безопасность</span>, а некоторые просто лучше работают при определенных сетевых условиях.
+							</p>
+							<p class="text">
+								 Большинство VPN-сетей используют стандартный набор протоколов, но компания ExpressVPN разработала протокол
+								 Lightway, который превосходит их все по скорости, надежности и безопасности. Попробуйте и убедитесь сами.
+								 Узнайте больше о Lightway.
+							</p>
+							<p class="text">
+								 ExpressVPN автоматически выбирает лучший протокол для вашей сети, но вы также можете выбрать его вручную.
+							</p>
+							<h2 class="text">В настоящее время популярны следующие VPN-протоколы:</h2>
+							<ul class="list">
+								 <li class="item">
+									  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/openvpn"
+											>OpenVPN</a
+									  >
+								 </li>
+								 <li class="item">
+									  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/ikev2">IKEv2</a>
+								 </li>
+								 <li class="item">
+									  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/l2tp"
+											>L2TP / IPsec</a
+									  >
+								 </li>
+								 <li class="item">
+									  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/pptp">PPTP *</a>
+								 </li>
+								 <li class="item"><a class="link" target="_blank" href="https://www.expressvpn.com/blog/">WireGuard*</a></li>
+								 <li class="item"><a class="link" href="#">SSTP*</a></li>
+							</ul>
+					  </div>
+
+					  <div class="block-repit auto">
+						<h2 id="section_8" class="title">VPN-протоколы</h2>
+						<p class="text">
+							 VPN-протоколы — это <span class="bold">методы</span>, с помощью которых ваше устройство подключается к
+							 VPN-серверу. Некоторые протоколы обеспечивают высокую <span class="bold">скорость</span>, некоторые повышают
+							 <span class="bold">безопасность</span>, а некоторые просто лучше работают при определенных сетевых условиях.
+						</p>
+						<p class="text">
+							 Большинство VPN-сетей используют стандартный набор протоколов, но компания ExpressVPN разработала протокол
+							 Lightway, который превосходит их все по скорости, надежности и безопасности. Попробуйте и убедитесь сами.
+							 Узнайте больше о Lightway.
+						</p>
+						<p class="text">
+							 ExpressVPN автоматически выбирает лучший протокол для вашей сети, но вы также можете выбрать его вручную.
+						</p>
+						<h2 class="text">В настоящее время популярны следующие VPN-протоколы:</h2>
+						<ul class="list">
+							 <li class="item">
+								  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/openvpn"
+										>OpenVPN</a
+								  >
+							 </li>
+							 <li class="item">
+								  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/ikev2">IKEv2</a>
+							 </li>
+							 <li class="item">
+								  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/l2tp"
+										>L2TP / IPsec</a
+								  >
+							 </li>
+							 <li class="item">
+								  <a class="link" target="_blank" href="https://www.expressvpn.com/ru/what-is-vpn/protocols/pptp">PPTP *</a>
+							 </li>
+							 <li class="item"><a class="link" target="_blank" href="https://www.expressvpn.com/blog/">WireGuard*</a></li>
+							 <li class="item"><a class="link" href="#">SSTP*</a></li>
+						</ul>
+				  </div>
+				  
+                </div>
+            </main>
+
+            <footer></footer>
+        </div>
+    </body>
+</html>
